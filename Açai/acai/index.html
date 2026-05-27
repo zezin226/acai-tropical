@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Açaí cremoso com acompanhamentos frescos.">
+  <title>🍇 Açaí Tropical</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="#" class="logo" aria-label="🍇 Açaí Tropical — página inicial">🍇 Açaí Tropical</a>
+      <nav aria-label="Menu principal">
+        <ul class="nav-list">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#lista">Lista</a></li>
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <h1 id="hero-title">🍇 Açaí Tropical</h1>
+        <p class="lead"><b>Açaí cremoso com acompanhamentos frescos.</b></p>
+        <a class="btn" href="#cardapio">Ver cardápio</a>
+      </div>
+    </section>
+
+    <section id="sobre" class="section" aria-labelledby="sobre-title">
+      <div class="container">
+        <h2 id="sobre-title">Sobre nós</h2>
+        <p>Somos Açaí Tropical .A <b>Açai Tropical</b> nasceu do sonho de criar um lugar acolhedor, com açaí de qualidade e muito sabor. Inspirada nas riquezas da Amazônia, a loja conquistou os clientes pelo bom atendimento, ingredientes frescos e variedade de acompanhamentos, tornando-se um ponto de encontro cheio de energia e alegria.</p>
+      </div>
+    </section>
+
+    <section id="lista" class="section" aria-labelledby="lista-title">
+      <div class="container">
+        <h2 id="lista-title">Lista de ingredientes</h2>
+        <ul class="ingredient-list" aria-live="polite">
+          <!-- Ingredientes injetados via JS a partir de js/dados.js -->
+        </ul>
+      </div>
+
+        </section>
+      <section id="lista" class="section" aria-labelledby="lista-title">
+  <div class="container">
+    <h2 id="lista-title">lista</h2>
+
+       <div class="lista-wrapper">
+      <div class="lista-texto">
+        <p><strong>1. açai 300ml</strong></p>
+        <p><strong>2. açai 500ml</strong></p>
+        <p><strong>3. açai 1l</strong></p>
+        <p><strong>4. Smoothie</strong></p>
+        <p><strong>5. Barca de Açai</strong></p>
+        <p><strong>6. Creme de Frutas</strong></p>
+        <p><strong>7. Açai zero açúcar</strong></p>
+        <p><strong>8. Copos Montados</strong></p>
+      </div>
+
+    <section id="cardapio" class="section section--alt" aria-labelledby="cardapio-title">
+      <div class="container">
+        <h2 id="cardapio-title">Cardápio</h2>
+        <ul class="cards" id="lista-itens" aria-live="polite">
+          <!-- Itens injetados via JS a partir de js/dados.js -->
+        </ul>
+      </div>
+    </section>
+
+    <section id="contato" class="section" aria-labelledby="contato-title">
+      <div class="container">
+        <h2 id="contato-title">Fale com a gente</h2>
+        <form class="form" novalidate aria-describedby="form-help">
+          <p id="form-help" class="muted"><b>s Os campos marcados com * são obrigatórios.</b></p>
+
+          <div class="field">
+            <label for="nome">Nome *</label>
+            <input id="nome" name="nome" type="text" required autocomplete="name" aria-required="true">
+          </div>
+
+          <div class="field">
+            <label for="email">E-mail *</label>
+            <input id="email" name="email" type="email" required autocomplete="email" aria-required="true">
+          </div>
+
+          <div class="field">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+          </div>
+
+          <button type="submit" class="btn">Enviar</button>
+          <p id="form-status" role="status" class="form-status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© <span id="ano"></span> Açaí Tropical. Projeto Profissional — Empresa InovaMax · Henzo/Luis/Yarah/Sarah/Jose.</p>
+      <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.0011720600864!2d-46.7817258237578!3d-23.64012906449247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5385d545699f%3A0x679406ba9e867572!2zVm9jYcOnw6NvIC0gU2VkZQ!5e0!3m2!1spt-BR!2sbr!4v1778506250166!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+    </div>
+  </footer>
+
+  <script src="js/dados.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
